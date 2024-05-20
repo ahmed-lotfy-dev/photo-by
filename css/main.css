@@ -18,10 +18,9 @@ body {
   display: none;
 } */
 
-.container {
+.wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2em;
 }
 
 .header-wrapper {
@@ -102,6 +101,8 @@ nav ul {
 .footer-wrapper {
   background-color: #000;
   color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 .footer-top {
@@ -113,7 +114,7 @@ nav ul {
 }
 
 .footer-bottom {
-  width: 100dvw;
+  width: 100%;
   padding: 0 1.5rem;
 }
 
@@ -143,6 +144,7 @@ nav ul {
 
 .contact-input {
   position: relative;
+  width: 100%;
 
   input {
     width: 100%;
