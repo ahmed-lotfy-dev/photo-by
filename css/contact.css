@@ -1,0 +1,95 @@
+/* Contact Page */
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+
+.left-section {
+  order: 2;
+  img {
+    width: 100%;
+    margin-top: 2rem;
+    align-content: start;
+    aspect-ratio: 1;
+  }
+}
+
+.right-section {
+  order: 1;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  h1::before {
+    content: "•";
+    padding-right: 10px;
+    font-size: 35px;
+    vertical-align: middle;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  input {
+    display: relative;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1 solid black;
+  }
+
+  input::placeholder {
+    font-weight: bold;
+  }
+
+  input:nth-child(3) {
+    margin-top: 2rem;
+  }
+
+  button {
+    margin: 1rem 0;
+    width: 50%;
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    background: white;
+    cursor: pointer;
+  }
+  button:hover {
+    background: lightgray;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    text-transform: uppercase;
+  }
+  h3::before {
+    content: "•";
+    padding-right: 10px;
+    font-size: 35px;
+    vertical-align: middle;
+  }
+}
+
+.left {
+  margin-bottom: 1rem;
+}
+.phone-email {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
